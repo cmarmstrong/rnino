@@ -1,9 +1,13 @@
 Package: rnino
-Title: What the Package Does (one line, title case)
+Title: Nino indices
 Version: 0.0.0.9000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.4.3)
-License: What license is it under?
+Description: Download nino indices from NOAA and Met Office Hadley Center, and
+  structure the data in R dataframes.  Available indicies are nino1+2, nino3,
+  nino3.4, and nino4.  All indices are computed from Met Office Hadley Center
+  datasets: HadISST1 and HadSST3.
+Depends: R (>= 3.4.0)
+License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1

@@ -3,8 +3,7 @@
 #' Download SST data from <https://www.esrl.noaa.gov/psd/gcos_wgsp/Timeseries/>
 #'
 #' Details copied from
-#' <https://climatedataguide.ucar.edu/climate-data/\
-#' nino-sst-indices-nino-12-3-34-4-oni-and-tni>
+#' <https://climatedataguide.ucar.edu/climate-data/nino-sst-indices-nino-12-3-34-4-oni-and-tni>
 #'
 #' The numbers of the Ni\~{n}o 1,2,3, and 4 regions correspond with the labels
 #' assigned to ship tracks that crossed these regions.
@@ -86,7 +85,6 @@ hadsst3 <- function(index=c('nino12', 'nino3', 'nino34', 'nino4')) {
                   'nino4'='metoffice.gov.uk/hadobs/hadsst3/data/HadSST.3.1.1.0/ascii/Nino_4.txt')
     urlNino <- paste0('https://www.', lNino[[index]])
     conn <- url(urlNino)
-    on.exit(close(conn))
     dfrNino <- read.table(conn)
     names(dfrNino) <- c('year', 'month', 1:100)
     dfrNino
