@@ -75,7 +75,7 @@ hadisst1 <- function(index=c('nino12', 'nino3', 'nino34', 'nino4'), anom=FALSE) 
     mNino
 }
 
-#' @ describeIn nino Download SST data from
+#' @describeIn nino Download SST data from
 #' <https://www.metoffice.gov.uk/hadobs/hadsst3/data/download.html>
 #' @export
 hadsst3 <- function(index=c('nino12', 'nino3', 'nino34', 'nino4')) {
