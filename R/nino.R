@@ -1,6 +1,6 @@
-#' SST data
+#' SST data.
 #'
-#' Download SST data from <https://www.esrl.noaa.gov/psd/gcos_wgsp/Timeseries/>
+#' Download SST data from <https://www.esrl.noaa.gov/psd/gcos_wgsp/Timeseries/>.
 #'
 #' Details copied from
 #' <https://climatedataguide.ucar.edu/climate-data/nino-sst-indices-nino-12-3-34-4-oni-and-tni>
@@ -14,7 +14,7 @@
 #' populations.  This index tends to have the largest variance of the Ni\~{n}o SST
 #' indices.
 #' 
-#' Ni\~[n}o 3 (5N-5S, 150W-90W): This region was once the primary focus for
+#' Ni\~{n}o 3 (5N-5S, 150W-90W): This region was once the primary focus for
 #' monitoring and predicting El Ni\~{n}o, but researchers later learned that the
 #' key region for coupled ocean-atmosphere interactions for ENSO lies further
 #' west (Trenberth, 1997).  Hence, the Ni\~{n}o 3.4 and ONI became favored for
@@ -75,8 +75,8 @@ hadisst1 <- function(index=c('nino12', 'nino3', 'nino34', 'nino4'), anom=FALSE) 
     mNino
 }
 
-#' @describeIn nino Download SST data from
-#' <https://www.metoffice.gov.uk/hadobs/hadsst3/data/download.html>
+#' @describeIn hadisst1 Download SST data from
+#'   <https://www.metoffice.gov.uk/hadobs/hadsst3/data/download.html>
 #' @export
 hadsst3 <- function(index=c('nino12', 'nino3', 'nino34', 'nino4')) {
     lNino <- list('nino12'='metoffice.gov.uk/hadobs/hadsst3/data/HadSST.3.1.1.0/ascii/Nino_12.txt',

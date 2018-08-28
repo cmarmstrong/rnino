@@ -2,3 +2,4 @@
 
 export(hadisst1)
 export(hadsst3)
+importFrom(utils,read.table)

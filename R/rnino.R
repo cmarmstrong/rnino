@@ -9,4 +9,5 @@
 #'
 #' @docType package
 #' @name rnino
+#' @importFrom utils read.table
 NULL
